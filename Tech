@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Futurix Web Technologies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Lexend', sans-serif;
+      background-color: #0e0f11;
+      color: #e2e2e2;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #111216;
+      padding: 3rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+
+    .logo {
+      font-size: 2.8rem;
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      color: #6acfc7;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .intro h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .intro p {
+      font-size: 1.2rem;
+      color: #bbbbbb;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background-color: #1a1b1f;
+      border: 1px solid #2a2b31;
+      padding: 2rem;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 10px rgba(106, 207, 199, 0.2);
+    }
+
+    .service-card h3 {
+      color: #6acfc7;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea, input[type="file"] {
+      background-color: #111216;
+      color: #e2e2e2;
+      border: 1px solid #333;
+      padding: 1rem;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #6acfc7;
+      color: #0e0f11;
+      border: none;
+      padding: 1rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #57b5af;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background-color: #111216;
+      color: #666;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Futurix<span>Web</span></div>
+    <p>Soluciones digitales de alto nivel</p>
+  </header>
+
+  <section class="intro">
+    <h1>Desarrollamos tu visión</h1>
+    <p>Transformamos ideas en productos digitales sofisticados, seguros y funcionales. Desde páginas web hasta sistemas complejos, creamos soluciones que se adaptan a ti y tu empresa.</p>
+  </section>
+
+  <section class="section">
+    <h2>Servicios Profesionales</h2>
+
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Diseño Web Moderno</h3>
+        <p>Landing pages, sitios corporativos, portafolios y más. Todo con diseño responsive y velocidad optimizada.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Desarrollo de Software a Medida</h3>
+        <p>Sistemas web, aplicaciones internas, herramientas de automatización. Soluciones personalizadas para  tu flujo de trabajo.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Integraciones con APIs</h3>
+        <p>Conectamos tu sistema con pasarelas de pago, plataformas externas o cualquier API que tu negocio necesite.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Sistemas de Gestión</h3>
+        <p>Paneles administrativos, gestión de usuarios, reportes, CRM, ERP y más, hechos a tu medida.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Automatización de Procesos</h3>
+        <p>Ahorra tiempo y dinero automatizando tareas repetitivas con soluciones personalizadas.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Aplicaciones Móviles</h3>
+        <p>Apps híbridas y PWA para Android/iOS, compatibles con tu sistema web o desde cero.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Consultoría y Asesoría Técnica</h3>
+        <p>Te ayudamos a tomar decisiones informadas sobre tecnología, arquitectura de software y escalabilidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact">
+    <h2>Cuéntanos sobre tu proyecto</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea rows="5" placeholder="Describe tu idea o necesidad..." required></textarea>
+      <label for="file-upload">Adjuntar archivo (opcional):</label>
+      <input type="file" id="file-upload" name="archivo">
+      <button type="submit">Enviar mensaje</button>
+    <form action="https://formsubmit.co/futurixweb@gmail.com" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="_next" value="https://futurixweb.netlify.app/gracias.html">
+      <input type="hidden" name="_captcha" value="false">
+
+
+      
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Futurix Web Technologies. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
